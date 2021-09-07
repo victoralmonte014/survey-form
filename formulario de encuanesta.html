@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>formulario de encuensta</title>
+</head>
+<body>
+    <header>
+        <h1 id="title" class="text-center disp-block">freeCodeCamp Survey Form</h1>
+        <P id="description" class="text-center disp-block">Thank you for taking the time to help us improve the platform</P>
+    </header>
+    <div class="conteiner">
+        
+        <form id="survey-form">
+            <div>
+                <label class="disp-block" id="name-label" for="name">Name</label>
+                <input class="disp-block size-input" id="name" type="text"  name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label class="disp-block" id="email-label" for="email">Email</label>
+                <input class="disp-block size-input" id="email" type="email"  name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label  class="disp-block" id="number-label" for="name">
+                    age<span>(optional)</span>
+                </label>
+                <input class="disp-block size-input" id="number" type="number"
+                min="15" max="70" name="age" placeholder="Enter your Age" required>
+            </div>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select class="size-input" name="role" id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="preferNo">prefer no to say</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label class="disp-block ">
+                    <input type="radio" value="definitely" name="user-recommend" checked>definitely
+                </label>
+                <label class="disp-block">
+                    <input type="radio" value="maybe" name="user-recommend">maybe
+                </label>
+                <label class="disp-block">
+                    <input type="radio" value="Notsure" name="user-recommend">Not sure
+                </label>
+            </div>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select class="size-input" name="role" id="dropdown">
+                    <option disabled selected value>select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open source</option>
+                </select>
+            </div>
+            <div>
+                <p>What would you like to see improved? 
+                   <span>(Check all that apply)</span>
+                </p>
+                <label class="disp-block" >
+                    <input  type="checkbox" name="prefer" id="front-end-projects">
+                    Front-end projects
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="back-end-projects">
+                    Back-end Projects
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="data-visualization">
+                    Data Visualization
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="challenges">
+                    Challenges
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="open-sourse-community">
+                    Open Source Community
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="gitter-help-rooms">
+                    Gitter help rooms
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="videos">
+                    Videos
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="Wiki">
+                    Wiki
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="forum">
+                    Forum
+                </label>
+                <label class="disp-block">
+                    <input type="checkbox" name="prefer" id="additional-courses">
+                    Additional Courses
+                </label>
+                
+            </div>
+            <div>
+                <label  class="disp-block">Any comments or suggestions?</label>
+                <textarea  class="disp-block input-textarea" name="" id="" cols="30" rows="10"></textarea>
+                <button   class="submit-button disp-block size-input" id="submit" type="submit">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
